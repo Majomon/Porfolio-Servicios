@@ -41,20 +41,19 @@ import imagePerfil from "../../assets/image/imagePerfil.png";
         siguiente nivel? ¡Estoy aquí para hacerlo realidad!"
       </p>
     </div>
-    {/* boton de whatsapp y redes sociales*/}
     <div
       class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-7"
     >
       <ButtonWhatsapp />
       <div class="flex items-center gap-x-6">
         {
-          /* arreglar el borde de los svg --> posible solucion pasar los svg a funciones de typesript */
           objectIcons.map((item) => {
             return (
               <a
                 title={item.name}
                 href={item.url}
                 set:html={item.svg}
+                target="_blank"
                 class="hover:bg-greenMain rounded-full hover:transition-all hover:duration-300 hover:border-spacing-0.5 hover:border-greenMain"
               />
             );

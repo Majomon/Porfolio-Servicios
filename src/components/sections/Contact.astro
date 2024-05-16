@@ -30,7 +30,11 @@ export const prerender = true;
       {
         listSocialMedia.map((item) => {
           return (
-            <a class="flex items-center gap-x-6 w-[300px]" href={`${item.url}`}>
+            <a
+              class="flex items-center gap-x-6 w-[300px]"
+              href={`${item.url}`}
+              target="_blank"
+            >
               <div set:html={item.svg} />
               <p
                 class=" text-white text-sm font-normal hyphens-manual w-[80%]"
