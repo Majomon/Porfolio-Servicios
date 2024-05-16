@@ -1,0 +1,16 @@
+---
+import Title from "../Title.astro";
+import SubTitleText from "../../components/SubTitleText.astro";
+import CarouselTecnologic from "../Preact/CarouselTecnologic.jsx";
+---
+
+<section class="flex flex-col gap-y-12 pt-24" id="skillsandtechnologic">
+  <article class="w-fit max-w-[600px] mx-auto flex flex-col gap-y-3">
+    <Title nameTitle="Habilidades y Tecnologias" />
+    <SubTitleText
+      textP=` Tecnologias que e aprendido con el paso del timepo para demostrar mis habilidades como diseñador y desarrollador`
+    />
+  </article>
+  {/* Carrusel de tecnologias */}
+  <CarouselTecnologic client:visible />
+</section>

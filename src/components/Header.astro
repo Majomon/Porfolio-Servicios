@@ -1,0 +1,30 @@
+---
+import ButtonContact from "../components/ButtonContact.astro";
+import { ListMenus } from "../types/ListMenusObjects";
+import ResponsiveNavbar from "../components/Preact/ResponsiveNavbar";
+---
+
+<header
+  class=" text-white h-[80px] w-full"
+>
+  <div
+    class="flex items-center justify-between max-w-[1366px] m-auto h-full px-[15px] "
+  >
+    <section class="text-sm">
+      <span class="text-greenMain font-medium">EZEQUIEL</span><span
+        class="text-white font-bold">GARCIA</span
+      >
+    </section>
+    <nav class="min-[930px]:flex items-center gap-x-10 hidden">
+      <ul class="flex items-center gap-x-7 font-normal text-sm">
+        {
+          ListMenus.map((item) => {
+            return <a href={item.href}>{item.name}</a>;
+          })
+        }
+      </ul>
+      <ButtonContact />
+    </nav>
+    <ResponsiveNavbar client:load />
+  </div>
+</header>

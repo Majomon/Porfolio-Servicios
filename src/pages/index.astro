@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Initial from "../components/sections/Initial.astro";
+import Service from "../components/sections/Service.astro";
+import Proyects from "../components/sections/Proyects.astro";
+import SkillsAndTechnologies from "../../src/components/sections/SkillsAndTechnologies.astro"
+import AboutMe from '../components/sections/AboutMe.astro';
+import Contact from '../components/sections/Contact.astro';
+export const prerender = true
+
+---
+
+<Layout title="Portafolio - Ezequiel Garcia">
+	<main class=" m-auto max-w-[1366px] overflow-hidden min-[1366px]:overflow-visible px-[10px] sm:px-[15px]">
+		<Initial />
+		<Service/>
+		<Proyects />
+		<SkillsAndTechnologies />
+		<AboutMe />
+		<Contact />
+	</main>
+</Layout>

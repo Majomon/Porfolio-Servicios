@@ -1,0 +1,23 @@
+---
+interface Props {
+  id: number,
+  name: string,
+  descrip: string,
+  svg: string
+}
+
+const {id, name, descrip, svg} = Astro.props;
+
+---
+
+<div
+  class="w-full h-[120px] text-white border-b border-[#4AD66D]/30 flex items-center justify-between py-[40px] px-[20px] cursor-pointer relative"
+>
+
+  <section class="flex gap-x-4 items-center font-semibold w-fit">
+    <h2 class={`text-2xl  ${id === 1 ? "text-white" : "bg-gradient-to-r from-green-400 via-green-500 to-green-800"} inline-block text-transparent bg-clip-text`}>0{id}</h2>
+    <h1 class="text-2xl">{name}</h1>
+  </section>
+  <p class="text-sm font-normal w-full max-w-[600px]">{descrip}</p>
+  <div set:html={svg} />
+</div>
