@@ -15,7 +15,7 @@ export default function ServiceOptions(): JSX.Element {
       : "";
 
   return (
-    <article className="w-full h-fit relative">
+    <article className="w-11/12 mx-auto h-fit relative">
       <div
         className={`absolute w-full transition-all duration-300 ${conditionBarHover} h-[120px] bg-gradient-to-r from-green-400 via-green-500 to-green-800 -z-10`}
       ></div>
@@ -39,7 +39,7 @@ export default function ServiceOptions(): JSX.Element {
               <h1 class="text-xl sm:text-2xl">{item.name}</h1>
             </section>
             <p class="text-sm font-normal w-4/5 max-w-[600px] hidden sm:block ">
-              {item.descrip}
+              {item.description}
             </p>
             <div dangerouslySetInnerHTML={{ __html: item.svg }} />
           </div>
