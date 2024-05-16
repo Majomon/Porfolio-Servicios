@@ -22,8 +22,8 @@ export const listSocialMedia: ObjectSocialMedia[] = [
         </defs>
         </svg>
         `,
-        url: "https://github.com/Ezequiel144",
-        title: "Ezequiel144"
+        url: "https://github.com/Majomon",
+        title: "Majomon"
     },
     {
         name: "Whatsapp",
@@ -38,8 +38,8 @@ export const listSocialMedia: ObjectSocialMedia[] = [
         </defs>
         </svg>
         `,
-        url: "https://wa.me/1538497927",
-        title: "+54 9 11 3849 7927"
+        url: "https://wa.me/+5491138612819",
+        title: "+54 9 11 3861 2819"
     },
     {
         name: "Email",
@@ -54,7 +54,7 @@ export const listSocialMedia: ObjectSocialMedia[] = [
         </defs>
         </svg>
         `,
-        url: "mailto:garciaezequiel2022001@gmail.com",
-        title: "garciaezequiel2022001@gmail.com"
+        url: "mailto:mauri.monzon91@gmail.com",
+        title: "mauri.monzon91@gmail.com"
     },
 ]

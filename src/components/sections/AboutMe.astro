@@ -2,17 +2,17 @@
 import Title from "../Title.astro";
 import SubTitleText from "../../components/SubTitleText.astro";
 import Image from "astro/components/Image.astro";
-import imagePerfil from "../../assets/image/imagePerfil.png";
+import imagePerfil from "../../assets/image/imagePerfil.jpeg";
 import CarouselInterests from "../Preact/CarouselInterests.jsx";
 ---
 
-<section class="flex flex-col gap-y-32 pt-24 h-fit" id="aboutme">
-  <article class="w-fit max-w-[600px] mx-auto flex flex-col gap-y-3">
+<section class="w-11/12 mx-auto flex flex-col gap-y-32 pt-24 h-fit" id="aboutme">
+  <!--   <article class="w-fit max-w-[600px] mx-auto flex flex-col gap-y-3">
     <Title nameTitle="Acerca de mi" />
     <SubTitleText
-      textP=`Soy Ezequiel, un apasionado del diseño y desarrollo digital con experiencia en desarrollo web, diseño UX/UI y diseño gráfico.`
+      textP=`Mi nombre es Mauricio, un apasionado del diseño y desarrollo digital con experiencia en desarrollo web, diseño UX/UI y diseño gráfico.`
     />
-  </article>
+  </article> -->
   <article
     class="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between relative gap-x-14 gap-y-20"
   >
@@ -85,11 +85,11 @@ import CarouselInterests from "../Preact/CarouselInterests.jsx";
         </svg>
       </div>
       <div
-        class="border border-greenMain rounded-2xl w-full max-h-[390px] -rotate-12 ml-10 m-auto"
+        class="border-2 border-greenMain w-full max-h-[390px] -rotate-12 ml-10 m-auto overflow-hidden rounded-md "
       >
         <Image
           src={imagePerfil}
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover filter grayscale"
           alt="imagen de perfil"
         />
       </div>

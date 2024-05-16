@@ -114,9 +114,6 @@ export default function Formulary() {
         <option className="text-black" value="Seleccionar motivo" selected>
           Seleccionar motivo
         </option>
-        <option className="text-black" value="Diseño Grafico">
-          Diseño Grafico
-        </option>
         <option className="text-black" value="Desarrollo Web">
           Desarrollo Web
         </option>
