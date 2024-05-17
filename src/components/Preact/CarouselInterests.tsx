@@ -27,7 +27,7 @@ export default function CarouselInterests() {
   };
 
   return (
-    <section className={"flex flex-col gap-y-4"}>
+    <section className={"w-6/12 flex flex-col gap-y-4 mx-auto"}>
       {listObjectInterests.map((item, index) => {
         return (
           <>
@@ -54,8 +54,8 @@ export default function CarouselInterests() {
                   onClick={handleClicImageCurrent}
                 >
                   <svg
-                    width="29"
-                    height="30"
+                    width="80"
+                    height="80"
                     viewBox="0 0 29 30"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

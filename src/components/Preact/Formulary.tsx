@@ -40,8 +40,8 @@ export default function Formulary() {
   const handleSubmit: any = (e: HTMLFormElement) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_j5qh5jk", "template_pr092xj", formContact.current, {
-        publicKey: "zfPTWOYTE4U47kWMa",
+      .sendForm("service_ymu527c", "template_pgxyzkq", formContact.current, {
+        publicKey: "dBBdC0a-MKeJ1opRx",
       })
       .then(
         (response) => {
