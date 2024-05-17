@@ -38,7 +38,7 @@ export default function CarouselInterests() {
                   " flex w-full items-center justify-between h-fit animate-fade-left "
                 }
               >
-                <section className="flex items-center gap-x-5 sm:gap-x-7">
+                <section className="flex flex-col sm:flex-row items-center gap-x-5 sm:gap-x-7">
                   <div
                     dangerouslySetInnerHTML={{
                       __html: item.svg,
