@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import ButtonWhatsapp from "../ButtonWhatsapp.astro";
 import { objectIcons } from "../../types/Objects.ts";
-import imagePerfil from "../../assets/image/imagePerfil.png";
+import imagePerfil from "../../assets/image/imagePerfil.jpeg";
 ---
 
 <section
@@ -24,12 +24,12 @@ import imagePerfil from "../../assets/image/imagePerfil.png";
       <h2
         class="text-xl sm:text-3xl text-center lg:text-left text-white font-semibold"
       >
-        ! Hola ¡ Mi nombre es Mauricio
+        ¡ Hola ! Mi nombre es Mauricio
       </h2>
       <h1
         class="uppercase text-3xl text-center lg:text-left sm:text-5xl font-bold tracking-wide bg-gradient-to-l from-green-200 via-green-300 to-green-400 inline-block text-transparent bg-clip-text"
       >
-        Desarrollador web full stack + Diseñador UX/UI
+        Desarrollador web full stack y Diseñador UX/UI
       </h1>
       <p class="font-light text-center lg:text-left text-sm text-white">
         Soy un diseñador web apasionado y comprometido con la creación de
@@ -38,7 +38,7 @@ import imagePerfil from "../../assets/image/imagePerfil.png";
         web impresionantes y funcionales. Mi enfoque centrado en el usuario
         garantiza que cada proyecto sea una experiencia única y memorable para
         quienes lo visitan. ¿Listo para llevar tu presencia en línea al
-        siguiente nivel? ¡Estoy aquí para hacerlo realidad!"
+        siguiente nivel? ¡Estoy aquí para hacerlo realidad!
       </p>
     </div>
     <div
@@ -101,9 +101,9 @@ import imagePerfil from "../../assets/image/imagePerfil.png";
     </div>
 
     <div
-      class="border border-greenMain rounded-2xl max-w-[390px] max-h-[390px] rotate-12"
+      class="border border-greenMain rounded-xl max-w-[320px] max-h-[320px] rotate-12 overflow-hidden"
     >
-      <Image src={imagePerfil} class="w-full h-full" alt="imagen de perfil" />
+      <Image src={imagePerfil} class="w-full h-full filter grayscale" alt="imagen de perfil" />
     </div>
 
     <div

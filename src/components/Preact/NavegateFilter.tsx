@@ -18,8 +18,6 @@ export default function NavegateFilter() {
       ? " left-24 w-[160px]"
       : valueFilterNav === "DISEÑO UX/UI"
       ? " left-[270px] w-[130px]"
-      : valueFilterNav === "DISEÑO GRÁFICO"
-      ? "left-[412px] w-[155px]"
       : "";
 
   const handleClicFilter: any = (e: HTMLFormElement): void => {
